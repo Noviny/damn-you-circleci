@@ -1,0 +1,17 @@
+{
+  "name": "sneaky-npm-testing",
+  "version": "0.0.0",
+  "description": "Testing bolt publishing private packages",
+  "main": "index.js",
+  "author": "Ben Conolly",
+  "license": "MIT",
+  "dependencies": {
+    "@atlaskit/build-releases": "^2.1.0",
+    "bolt": "^0.20.7"
+  },
+  "bolt": {
+    "workspaces": [
+      "packages/*"
+    ]
+  }
+}
