@@ -32,7 +32,7 @@ jobs:
 -workflows:
     version: 2
     jobs:
-        - test
+        - test:
             filters:
                 branches:
                     ignore: master
