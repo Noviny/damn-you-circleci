@@ -6,8 +6,8 @@ jobs:
       - image: circleci/node:carbon-browsers
     steps:
       - run:
-        name: test
-        command: echo just want to make sure this works
+          name: whatever
+          command: echo "please work"
   build:
     working_directory: ~/repo
     docker:
