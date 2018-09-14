@@ -9,6 +9,7 @@
     "@atlaskit/build-releases": "^2.1.2",
     "bolt": "^0.22.0",
     "cross-spawn": "^6.0.5",
+    "npm-cli": "^0.1.0",
     "spawndamnit": "^2.0.0"
   },
   "bolt": {
