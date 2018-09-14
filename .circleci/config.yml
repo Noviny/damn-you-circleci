@@ -29,14 +29,12 @@ jobs:
       - run:
           name: release
           command: yarn release
--workflows:
-    version: 2
+workflows:
+  version: 2
+  something:
     jobs:
-        - test:
-            filters:
-                branches:
-                    ignore: master
-        - build:
-            filters:
-                branches:
-                    only: master
+      - test
+      - build:
+          filters:
+            branches:
+              only: master
