@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@atlaskit/build-releases": "^2.1.2",
-    "bolt": "^0.20.7",
+    "bolt": "^0.22.0",
     "cross-spawn": "^6.0.5",
     "spawndamnit": "^2.0.0"
   },
