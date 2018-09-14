@@ -6,9 +6,10 @@
   "author": "Ben Conolly",
   "license": "MIT",
   "dependencies": {
-    "@atlaskit/build-releases": "^2.1.0",
-    "bolt": "^0.20.7",
+    "@atlaskit/build-releases": "^2.1.2",
+    "bolt": "^0.22.1",
     "cross-spawn": "^6.0.5",
+    "npm-cli": "^0.1.0",
     "spawndamnit": "^2.0.0"
   },
   "bolt": {
@@ -18,7 +19,7 @@
   },
   "scripts": {
     "changeset": "build-releases changeset",
-    "version": "build-releases version",
-    "release": "build-releases publish"
+    "version-packages": "build-releases version",
+    "release": "build-releases publish --public"
   }
 }
