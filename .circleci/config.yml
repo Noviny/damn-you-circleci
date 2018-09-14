@@ -1,5 +1,13 @@
 version: 2
 jobs:
+  test:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:carbon-browsers
+    steps:
+      - run:
+        name: test
+        command: echo just want to make sure this works
   build:
     working_directory: ~/repo
     docker:
@@ -19,13 +27,12 @@ jobs:
           name: Authenticate with registry
           command: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
       - run:
-          branches:
-
           name: release
           command: yarn release
 workflows:
     version: 2
     jobs:
+        - test
         - build:
             filters:
                 branches:
