@@ -14,6 +14,9 @@ jobs:
       - image: circleci/node:carbon-browsers
     steps:
       - checkout
+      - run:
+          name: Set git identity
+          command:   git config  user.email "noviny@thinkmill.com.au" && git config --global user.name "Noviny"
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
