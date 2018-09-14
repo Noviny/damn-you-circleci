@@ -19,5 +19,15 @@ jobs:
           name: Authenticate with registry
           command: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
       - run:
+          branches:
+
           name: release
           command: yarn release
+workflows:
+    version: 2
+    jobs:
+        - build:
+            filters:
+                branches:
+                    only: master
+
