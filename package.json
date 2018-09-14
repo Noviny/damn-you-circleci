@@ -19,7 +19,7 @@
   },
   "scripts": {
     "changeset": "build-releases changeset",
-    "version": "build-releases version",
+    "version-packages": "build-releases version",
     "release": "build-releases publish --public"
   }
 }
