@@ -19,6 +19,6 @@
   "scripts": {
     "changeset": "build-releases changeset",
     "version": "build-releases version",
-    "release": "build-releases publish"
+    "release": "build-releases publish --public"
   }
 }
