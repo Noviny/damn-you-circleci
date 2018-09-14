@@ -29,9 +29,9 @@ jobs:
       - run:
           name: release
           command: yarn release
-workflows:
-    version: 2
-    jobs:
-        - test
-        - build
+# workflows:
+#     version: 2
+#     jobs:
+#         - test
+#         - build
 
